@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Part-Time Job: Dog Sitter</title>
+</head>
+<body>
+    <nav>
+        <a href="#about">Home</a>
+        <a href="#services">Services</a>
+        <a href="#socials">Socials</a>
+    </nav>
+
+    <main>
+        <h1 id="about"> My Part-Time Job as a Dog Sitter</h1>
+
+        <p>Hi! I'm Angelique and I work part-time as a dog sitter to <b>Binbin</b> (or what i call Bebu). 
+        I look after Bebu while ate Maddie (his owner) is out of town, has work, or just too busy to be at home. 
+        It all started with my older sister originally having the job. But ever since she got busy with her
+        main job, she passed me this job, and it landed as my part-time work. Everytime I tell people about this,
+        they get suprise because they never heard or even considered that this kind of job exist. Well, it does, and I 
+        earn a very good amount for a student while still enjoying the work I do. </p>
+
+        <p><b>Binbin or Bebu</b> is a cute, dog influencer. He has his own social media platform and business that many people adore.
+            Many would think that he's scary because of his breed, but actually he is one of the sweetest dog I 
+            have ever met. His size and looks might overwhelm other people and other dogs, but once 
+            they bonded with him, they will realize that breeds nor their size should not define their 
+            dog-sinality(personality lol)
+        </p>
+
+        <div class="slider">
+            <div class="slider-track">
+                <div class="slide">
+                    <div class="picture"><img src="images/bb1.jpg" alt="Beach lover"></div>
+                    <p><b>Beach Lover</b></p>
+                </div>
+
+                 <div class="slide">
+                    <div class="picture"><img src="images/bb2.jpg" alt="Binbin's Business"></div>
+                    <p><b>Binbin's Business</b></p>
+                </div>
+
+                 <div class="slide">
+                    <div class="picture"><img src="images/bb3.jpg" alt="Favorite cap"></div>
+                    <p><b>Favorite Cap</b></p>
+                </div>
+
+                 <div class="slide">
+                    <div class="picture"><img src="images/bb4.jpg" alt="Cutie Patotie"></div>
+                    <p><b>Cutie Patotie</b></p>
+                </div>
+
+                 <div class="slide">
+                    <div class="picture"><img src="images/bb5.jpg" alt="Big smile"></div>
+                    <p><b>Big smile</b></p>
+                </div>
+
+                <div class="slide">
+                    <div class="picture"><img src="images/bb6.jpg" alt="Sunkissed"></div>
+                    <p><b>Sunkissed</b></p>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="services">What I Usually Do</h2>
+         <p>These are what I do:</p>
+        <ul>
+            <li>Dog Walking</li>
+            <li>Feeding and giving water</li>
+            <li>Overnight stays at the condo</li>
+        </ul>
+
+        <p>This is my routine whenever the owner is not around:</p>
+        <ol>
+            <li>Go to the condo where Bebu lives.</li>
+            <li>Ask ate Maddie if he has already eaten.</li>
+            <li>Feed him if not yet, or take him out to the condo's garden if he has already ate.</li>
+            <li>Play with him until he gets tired.</li>
+            <li>We both sleep.</li>
+            <li>Repeat the next day.</li>
+        </ol>
+
+        <h2 id="socials">Their Social Medias</h2>
+        <li><a href="https://www.instagram.com/muddycruise?evlk=NHZzaXB0d3l3Mmhr"  target="_blank">Ate Maddie</a></li>
+        <li><a href="https://www.instagram.com/goodboibinbin?gwpx=NTJ1dzRvazI3amUy"  target="_blank">Binbin</a></li>
+        <li><a href="https://www.instagram.com/b.andfriends?avpt=dWJjb21ndjNlaW42"  target="_blank">Binbin's Business</a></li>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2026 Mary Angelique B. Corpuz. All rights reserved.</p>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f8ff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url("images/bg.jpg");
+        }
+
+        nav {
+            background-color: #0a1f3d;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 22px;
+        }
+
+        nav a:hover {
+            background-color: #5bc0f8;
+            color: #0a1f3d;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f0f8ff;
+        }
+
+        h1 {
+            color: #0a1f3d;
+            text-align: center;
+            border-bottom: 3px solid #5bc0f8;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #17407a;
+        }
+
+        p {
+            font-size: 17px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            font-size: 17px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .slider {
+            width: 100%;
+            min-width: 0;
+            overflow: hidden;
+            padding: 10px 0 20px;
+            mask-image: linear-gradient(
+            to right,
+            transparent,
+          black 8%,
+          black 92%,
+            transparent
+        );
+          -webkit-mask-image: linear-gradient(
+          to right,
+          transparent,
+        black 8%,
+        black 92%,
+          transparent
+         );
+        }
+
+        .slider-track {
+            display: flex;
+            width: max-content;
+            animation: slide 30s linear infinite;
+            will-change: transform;
+        }
+
+        @keyframes slide {
+        from {transform: translateX(0);}
+
+        to {transform: translateX(-50%);}
+        }
+
+       .slide {
+            flex: 0 0 260px;
+            width: 260px;
+            margin-right: 24px;
+            background-color: white;
+            border: 1px solid #e3d9cf;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .picture {
+            height: 180px;
+            width: 100%;
+            background-color: #0b2a3f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .picture img {
+            max-width: 85%;
+            max-height: 85%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .slide p {
+            margin: 0;
+            padding: 12px 16px;
+            font-size: 13px;
+            overflow-wrap: break-word;
+            text-align: center;
+        }
+
+        .slide span {
+            float: right;
+            color: #d32f2f;
+            font-weight: bold;
+        }
+
+        main a {
+            color: #1565b8;
+            font-weight: bold;
+        }
+
+        main a:hover {
+            color: #0a1f3d;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #0a1f3d;
+            color: white;
+            text-align: center;
+            padding: 5px 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+        border-bottom: 1px solid #24406b;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p, ul, ol {
+        font-size: 15px;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+
+    </style>
+    
+</body>
+</html>
